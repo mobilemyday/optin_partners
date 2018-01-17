@@ -1,0 +1,13 @@
+{
+    "name": "mobilemyday/optin_partners",
+    "type": "project",
+    "license": "MMDS",
+    "authors": [
+        {
+            "name": "Stephane Marchant",
+            "email": "sm@mobilemyday.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
