@@ -1,0 +1,78 @@
+/* ===========================
+   Tools/Grille
+   =========================== */
+
+//1/2
+.float-middle
+{
+	@media screen and (min-width: $medium) {
+		width:45%;
+		float:left;
+		margin:0;
+		padding:0;
+	}
+}
+.float-middle:last-child 
+{
+	@media screen and (min-width: $medium) {
+		float:right;
+	}
+}
+//1/4
+.float-quart
+{
+	@media screen and (min-width: $medium) {
+		width:20%;
+		float:right;
+		margin:0;
+		padding:0;
+	}
+}
+.float-trois-quart
+{
+	@media screen and (min-width: $medium) {
+		width:75%;
+		float:left;
+		margin:0;
+		padding:0;
+	}
+}
+//1/4
+.float-quart-inverse
+{
+	@media screen and (min-width: $medium) {
+		width:20%;
+		float:left;
+		margin:0;
+		padding:0;
+	}
+}
+.float-trois-quart-inverse
+{
+	@media screen and (min-width: $medium) {
+		width:75%;
+		float:right;
+		margin:0;
+		padding:0;
+	}
+}
+
+//1/3
+.float-tiers
+{
+	@media screen and (min-width: $medium) {
+		width: 30%;
+		float:left;
+		margin:0;
+		padding:0;
+	}
+}
+.float-deux-tiers
+{
+	@media screen and (min-width: $medium) {
+		width:64%;
+		float:right;
+		margin:0;
+		padding:0;
+	}
+}

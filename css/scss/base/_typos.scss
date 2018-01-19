@@ -1,0 +1,66 @@
+/* ==|====================
+   Base/Typos // Import, Tailles, couleurs, fonts
+   ======================= */
+
+// = Imports
+// -----------------------------
+
+
+h1 
+{
+  color:white;
+  padding:5%;
+}
+h2 
+{
+  display:inline-block;
+  position:relative;
+  padding: 2% 0px 0;
+  margin-top: 3%;
+  color:$blue;
+  font-size: 21px;
+  font-style: italic;
+  span 
+  {
+    font-size: 25px;
+    font-style: normal;
+  }
+  &:after 
+  {
+    content: "";
+      position: absolute;
+      display: block;
+      height: 2px;
+      width: 30px;
+      background: $blue;
+      top: 0;
+      left: 0;
+  }
+}
+section:nth-child(2n+2) h2  
+{
+  color:$purple;
+  &:after 
+  {
+    content: "";
+      background: $purple;
+  }
+}
+section:nth-child(3n+3) h2  
+{
+  color:$green;
+  &:after 
+  {
+    content: "";
+      background: $green;
+  }
+}
+section:nth-child(5n+5) h2  
+{
+  color:$orange;
+  &:after 
+  {
+    content: "";
+      background: $orange;
+  }
+}
