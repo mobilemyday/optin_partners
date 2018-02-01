@@ -3,7 +3,7 @@
 	if(!mysqli_select_db($DB, 'optin')) {
 		mysqli_query($DB, "CREATE DATABASE optin");
 		mysqli_select_db($DB, 'optin');
-		mysql_query($DB, 'DROP TABLE optins');
+		mysql_query($DB, 'DROP TABLE IF EXISTS optins');
 		mysqli_query($DB, "CREATE TABLE `optins` (
 		  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
 		  `code` varchar(24) DEFAULT NULL,
