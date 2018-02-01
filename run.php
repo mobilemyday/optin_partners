@@ -12,3 +12,5 @@
 	}
 	$query .= join(',', $join);
 	mysqli_query($DB, $query) or die(mysqli_error($DB));
+	
+	header('location:/'.$data['language'].'/optin-patchpharma/?done=1');
