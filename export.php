@@ -1,7 +1,5 @@
 <?php 
-	
-	ini_set('error_reporting', E_ALL); ini_set('display_errors', TRUE);
-	
+		
 	$DB = mysqli_connect('localhost', 'root', 'root');
 	mysqli_select_db($DB, 'optin');
 	
