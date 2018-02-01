@@ -26,6 +26,9 @@
             <div class="title-container">
                 <h1>Formulaire</h1>
             </div>
+            <?php if(isset($_GET['done']) && $_GET['done'] == 1) : ?>
+            	<p style="margin:20px;padding:20px;background-color: #dcffef;color: #44a47f">Optin enregistré avec succès</p>
+            <?php endif ?>
             <form method="post" action="/run.php">
                 <section>
                     <fieldset class="inputstyle">
