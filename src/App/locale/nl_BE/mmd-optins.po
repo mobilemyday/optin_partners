@@ -1,0 +1,102 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2018-03-14 16:17+0100\n"
+"PO-Revision-Date: 2018-03-15 10:57+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.6\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: nl_BE\n"
+
+#: App/src/Action/HomePageAction.php:58
+msgid "Welcome to %name%"
+msgstr "Bienvenue sur %name%"
+
+msgid "interest.form.page.title"
+msgstr "Formulaire"
+
+msgid "interest.form.apb"
+msgstr "N° APB"
+
+msgid "interest.form.sex.label"
+msgstr "Civilité"
+
+msgid "interest.form.lastname"
+msgstr "Nom du responsable"
+
+msgid "interest.form.firstname"
+msgstr "Prénom"
+
+msgid "interest.form.email"
+msgstr "Addresse e-mail de la pharmacie"
+
+msgid "interest.form.pos_name"
+msgstr "Nom de la pharmacie"
+
+msgid "interest.form.street"
+msgstr "Rue"
+
+msgid "interest.form.number"
+msgstr "Numéro"
+
+msgid "interest.form.box"
+msgstr "Boite"
+
+msgid "interest.form.city"
+msgstr "Ville"
+
+msgid "interest.form.zip"
+msgstr "Code postal"
+
+msgid "interest.form.software.label"
+msgstr "Sélectionnez le logiciel de gestion"
+
+msgid "interest.form.software.other"
+msgstr "Autre"
+
+msgid "interest.form.software-other"
+msgstr "Précisez le logiciel de gestion"
+
+msgid "interest.form.software.has.change"
+msgstr "Avez-vous changé de soft ces deux dernières années?"
+
+msgid "interest.form.old-software.label"
+msgstr "Sélectionnez votre ancien logiciel de gestion"
+
+msgid "interest.form.optin.mmd"
+msgstr "Optin MMD"
+
+msgid "interest.form.optin.partner.patchpharma"
+msgstr "Optin Patch Pharma"
+
+msgid "interest.form.optin.partner.google"
+msgstr "Optin Google"
+
+msgid "interest.form.submit"
+msgstr "Soumettre"
+
+msgid "An error occurred, please contact us if the problem persist"
+msgstr "Une erreur est survenue, merci de nous contacter si le problème persiste"
+
+msgid "interest.confirmation.page.title"
+msgstr "interest.confirmation.page.title"
+
+msgid "interest.confirmation.message"
+msgstr "interest.confirmation.message"
+
+msgid "interest.confirmation.thanks"
+msgstr "interest.confirmation.thanks"
+
+msgid "optin.confirmation.page.title"
+msgstr "optin.confirmation.page.title"
+
+msgid "optin.confirmation.message"
+msgstr "optin.confirmation.message"
+
+msgid "optin.confirmation.thanks"
+msgstr "optin.confirmation.thanks"

@@ -1,0 +1,21 @@
+{% extends '@layout/template.html.twig' %}
+
+{% block title %}mobile my day - optin{% endblock %}
+
+{% block patnerLogo %}
+	{% if partner is defined and partner %}
+	<img class="logo" src="/img/logo-{{ partner }}.jpg" alt="Logo {{ partner }}" />
+	{% endif %}
+{% endblock %}
+
+{% block content %}
+<div class="title-container">
+	<h1>
+		{{ 'optin.confirmation.page.title'|translate }}
+	</h1>
+</div>
+<section class="message-success-container">
+	<p>{{ 'optin.confirmation.message'|translate }}</p>
+	<p>{{ 'optin.confirmation.thanks'|translate }}</p>
+</section>
+{% endblock %}

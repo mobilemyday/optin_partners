@@ -1,0 +1,27 @@
+.m-languages
+{
+	position:absolute;
+	right:10px;
+	top:10px;
+	li 
+	{
+		display:inline-block;
+		&:after 
+		{
+			content:"-";
+			margin-left:5px;
+		}
+	}
+	li:last-child 
+	{
+		&:after 
+		{
+			content:"";
+		}
+	}
+	a.active 
+	{
+		font-weight:bold;
+		opacity:0.8;
+	}
+}

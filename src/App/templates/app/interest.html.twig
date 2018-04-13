@@ -1,0 +1,110 @@
+{% extends '@layout/template.html.twig' %}
+
+{% block title %}mobile my day - optin{% endblock %}
+
+{% block patnerLogo %}
+	{% if partner %}
+	<img class="logo" src="/img/logo-{{ partner }}.jpg" alt="Logo {{ partner }}" />
+	{% endif %}
+{% endblock %}
+
+{% block content %}
+<div class="title-container">
+	<h1>
+		{{ 'interest.form.page.title'|translate }}
+	</h1>
+</div>
+<form action="" method="post" enctype="application/x-www-form-urlencoded">
+	<section>
+
+		{% if errorMessage is defined %}
+			<p class="error">{{ errorMessage|translate }}</p>
+		{% endif %}
+
+		<fieldset class="inputstyle">
+			<label for="apb-input">{{ 'interest.form.apb'|translate }}</label>
+			{{ interestForm.get('code')|formInput }}
+		</fieldset>
+		<fieldset class="inputstyle">
+			<div class="row">
+				<div class="col-md-2 select-container">
+					{{ interestForm.get('sex')|formSelect }}
+				</div>
+				<div class="col-md-5 inputstyle">
+					<label for="lastname-input">{{ 'interest.form.lastname'|translate }}</label>
+					{{ interestForm.get('lastname')|formInput }}
+				</div>
+				<div class="col-md-5 inputstyle">
+					<label for="firstname-input">{{ 'interest.form.firstname'|translate }}</label>
+					{{ interestForm.get('firstname')|formInput }}
+				</div>
+			</div>
+		</fieldset>
+		<fieldset class="inputstyle">
+			<label for="email-input">{{ 'interest.form.email'|translate }}</label>
+			{{ interestForm.get('email')|formInput }}
+		</fieldset>
+		<fieldset class="inputstyle">
+			<label for="pos-name-input">{{ 'interest.form.pos_name'|translate }}</label>
+			{{ interestForm.get('pointOfSaleName')|formInput }}
+		</fieldset>
+		<fieldset class="">
+			<div class="row">
+				<div class="col-md-8 inputstyle">
+					<label for="street-input">{{ 'interest.form.street'|translate }}</label>
+					{{ interestForm.get('street')|formInput }}
+				</div>
+				<div class="col-md-2 inputstyle">
+					<label for="number-input">{{ 'interest.form.number'|translate }}</label>
+					{{ interestForm.get('number')|formInput }}
+				</div>
+				<div class="col-md-2 inputstyle">
+					<label for="box-input">{{ 'interest.form.box'|translate }}</label>
+					{{ interestForm.get('box')|formInput }}
+				</div>
+			</div>
+		</fieldset>
+		<fieldset class="inputstyle">
+			<div class="row">
+				<div class="col-md-8 inputstyle">
+					<label for="city-input">{{ 'interest.form.city'|translate }}</label>
+					{{ interestForm.get('city')|formInput }}
+				</div>
+				<div class="col-md-4 inputstyle">
+					<label for="zip-input">{{ 'interest.form.zip'|translate }}</label>
+					{{ interestForm.get('zip')|formInput }}
+					{{ interestForm.get('country')|formInput }}
+				</div>
+			</div>
+		</fieldset>
+		<fieldset class="inputstyle select-container">
+			{{ interestForm.get('idSoftware')|formSelect }}
+		</fieldset>
+		<fieldset class="inputstyle hidden">
+			<label for="software-other-input">{{ 'interest.form.software-other'|translate }}</label>
+			{{ interestForm.get('otherSoftware')|formInput }}
+		</fieldset>
+		<fieldset>
+			{{ interestForm.get('software_has_change')|formCheckbox }}
+		</fieldset>
+		<fieldset class="inputstyle hidden select-container">
+			{{ interestForm.get('old_idSoftware')|formSelect }}
+		</fieldset>
+		<fieldset class="inputstyle hidden">
+			<label for="old-software-other-input">{{ 'interest.form.software-other'|translate }}</label>
+			{{ interestForm.get('old_otherSoftware')|formInput }}
+		</fieldset>
+		<fieldset class="">
+			{{ interestForm.get('optin_mmd')|formCheckbox }}
+			{% if interestForm.elements.optin_partner is defined %}
+				{{ interestForm.elements.optin_partner|formCheckbox }}
+			{% endif %}
+		</fieldset>
+		<fieldset>
+			<button name="submit" class="btn" type="submit">
+				{{ 'interest.form.submit'|translate }}
+			</button>
+		</fieldset>
+	</section>
+</form>
+{% endblock %}
