@@ -642,7 +642,9 @@ select:hover, select:focus {
     position: absolute;
     right: 10px;
     background-size: 100%;
-    top: 20px; }
+    top: 20px;
+    pointer-events: none;
+  }
 
 form input[type="text"]:hover,
 form input[type="email"]:hover,
@@ -1242,3 +1244,58 @@ section:nth-child(5n+5) .btn {
 }
 .error{text-align: center; color:#D43537; display: block;}
 /*# sourceMappingURL=screen.css.map */
+
+
+.row {
+  margin: 0 -15px;
+}
+.row:before, .row:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+.col-md-2 {
+  position: relative;
+  float: left;
+  margin: 0 15px;
+  width: calc(16.666666666666667% - 30px);
+}
+.col-md-4 {
+  position: relative;
+  float: left;
+  margin: 0 15px;
+  width: calc(33.333333333333333% - 30px);
+}
+.col-md-5 {
+  position: relative;
+  float: left;
+  margin: 0 15px;
+  width: calc(41.666666666666667% - 30px);
+}
+.col-md-8 {
+  position: relative;
+  float: left;
+  margin: 0 15px;
+  width: calc(66.666666666666667% - 30px);
+}
+
+@media screen and (max-width: 768px) {
+
+  .col-md-2 {
+    width: calc(100% - 30px);
+    margin: 10px 15px;
+  }
+  .col-md-4 {
+    width: calc(100% - 30px);
+    margin: 10px 15px;
+  }
+  .col-md-5 {
+    width: calc(100% - 30px);
+    margin: 10px 15px;
+  }
+  .col-md-8 {
+    width: calc(100% - 30px);
+    margin: 10px 15px;
+  }
+}
