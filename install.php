@@ -19,6 +19,7 @@
 		  `zip` varchar(10) DEFAULT NULL,
 		  `country` char(2) DEFAULT NULL,
 		  `idSoftware` int(11) DEFAULT NULL,
+		  `otherSoftware` varchar(255) DEFAULT NULL,
 		  `software_has_change` char(1) DEFAULT NULL,
 		  `old_idSoftware` int(11) DEFAULT NULL,
 		  `old_otherSoftware` varchar(255) DEFAULT NULL,

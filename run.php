@@ -4,8 +4,7 @@
 	@include_once('install.php');
 	mysqli_select_db($DB, 'optin') or die(mysqli_error($DB));
 	
-	$data = $_POST;
-	die('<pre>'.print_r($data, 1).'</pre>');
+	$data = $_POST['optin'];
 	
 	$query = "INSERT INTO optins SET";
 	foreach($data as $key => $val) {
