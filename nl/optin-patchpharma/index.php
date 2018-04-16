@@ -114,7 +114,7 @@
 						<label for="zip-input">Bus code</label>
 						<input name="optin[zip]" type="text" placeholder="" class="" id="zip-input" value="" required="">
 						<input name="optin[country]" type="hidden" placeholder="" class="" id="country-input" value="BE" required="">
-						<input name="optin[language]" type="hidden" placeholder="" class="" id="country-input" value="NL" required="">
+						<input name="optin[language]" type="hidden" placeholder="" class="" id="country-input" value="nl" required="">
 					</div>
 				</div>
 			</fieldset>
