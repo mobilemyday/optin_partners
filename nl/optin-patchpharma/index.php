@@ -49,57 +49,57 @@
         	</ul>
 		<div class="title-container">
 	<h1>
-		Formulaire
+		Formulier
 	</h1>
 </div>
 <?php if(isset($_GET['done']) && $_GET['done'] == 1) : ?>
-	<p style="margin:20px;padding:20px;background-color: #dcffef;color: #44a47f">Optin enregistré avec succès<br /><a href="/fr/optin-patchpharma/">Nouvel optin?</a></p>
+	<p style="margin:20px;padding:20px;background-color: #dcffef;color: #44a47f">Optin wel opgenomen<br /><a href="/fr/optin-patchpharma/">Nieuw optin?</a></p>
 <?php else : ?>
 	<form action="../../run.php" method="post" enctype="application/x-www-form-urlencoded">
 		<section>
 	
 			
 			<fieldset class="inputstyle">
-				<label for="apb-input">N° APB</label>
+				<label for="apb-input">APB nummer</label>
 				<input name="optin[code]" type="text" placeholder="" class="" id="code-input" value="" required="">
 			</fieldset>
 			<fieldset class="inputstyle">
 				<div class="row">
 					<div class="col-md-2 select-container">
-						<select name="optin[sex]" type="select" class="" id="sex-select" required="" autocomplete="off"><option value="" selected="selected">Civilité</option>
-	<option value="m">Mr.</option>
-	<option value="f">Mrs.</option></select>
+						<select name="optin[sex]" type="select" class="" id="sex-select" required="" autocomplete="off"><option value="" selected="selected">Titel</option>
+	<option value="m">Mijnheer</option>
+	<option value="f">Mevrouw</option></select>
 					</div>
 					<div class="col-md-5 inputstyle">
-						<label for="lastname-input">Nom du responsable</label>
+						<label for="lastname-input">Naam van het verantwoordelik</label>
 						<input name="optin[lastname]" type="text" placeholder="" class="" id="lastname-input" value="" required="">
 					</div>
 					<div class="col-md-5 inputstyle">
-						<label for="firstname-input">Prénom</label>
+						<label for="firstname-input">Voornaam</label>
 						<input name="optin[firstname]" type="text" placeholder="" class="" id="firstname-input" value="" required="">
 					</div>
 				</div>
 			</fieldset>
 			<fieldset class="inputstyle">
-				<label for="email-input">Addresse e-mail de la pharmacie</label>
+				<label for="email-input">E-mail adres van de apotheek</label>
 				<input name="optin[email]" type="text" placeholder="" class="" id="test" value="" required="">
 			</fieldset>
 			<fieldset class="inputstyle">
-				<label for="pos-name-input">Nom de la pharmacie</label>
+				<label for="pos-name-input">Naam van de apotheek</label>
 				<input name="optin[pointOfSaleName]" type="text" placeholder="" class="" id="pos-name-input" value="" required="">
 			</fieldset>
 			<fieldset class="">
 				<div class="row">
 					<div class="col-md-8 inputstyle">
-						<label for="street-input">Rue</label>
+						<label for="street-input">Straat</label>
 						<input name="optin[street]" type="text" placeholder="" class="" id="street-input" value="" required="">
 					</div>
 					<div class="col-md-2 inputstyle">
-						<label for="number-input">Numéro</label>
+						<label for="number-input">Nummer</label>
 						<input name="optin[number]" type="text" placeholder="" class="" id="number-input" value="" required="">
 					</div>
 					<div class="col-md-2 inputstyle">
-						<label for="box-input">Boite</label>
+						<label for="box-input">Bus</label>
 						<input name="optin[box]" type="text" placeholder="" class="" id="box-input" value="">
 					</div>
 				</div>
@@ -107,11 +107,11 @@
 			<fieldset class="inputstyle">
 				<div class="row">
 					<div class="col-md-8 inputstyle">
-						<label for="city-input">Ville</label>
+						<label for="city-input">Stad</label>
 						<input name="optin[city]" type="text" placeholder="" class="" id="city-input" value="" required="">
 					</div>
 					<div class="col-md-4 inputstyle">
-						<label for="zip-input">Code postal</label>
+						<label for="zip-input">Bus code</label>
 						<input name="optin[zip]" type="text" placeholder="" class="" id="zip-input" value="" required="">
 						<input name="optin[country]" type="hidden" placeholder="" class="" id="country-input" value="BE" required="">
 						<input name="optin[language]" type="hidden" placeholder="" class="" id="country-input" value="NL" required="">
@@ -119,7 +119,7 @@
 				</div>
 			</fieldset>
 			<fieldset class="inputstyle select-container">
-				<select name="optin[idSoftware]" type="select" class="software-select" id="software-select" required="" autocomplete="off"><option value="" selected="selected">Sélectionnez le logiciel de gestion</option>
+				<select name="optin[idSoftware]" type="select" class="software-select" id="software-select" required="" autocomplete="off"><option value="" selected="selected">Software house</option>
 	<option value="2">Corilus - Greenock</option>
 	<option value="1">Corilus - Offigest</option>
 	<option value="13">Familia</option>
@@ -133,17 +133,17 @@
 	<option value="5">Sabco - New</option>
 	<option value="4">Sabco - Optimum</option>
 	<option value="3">Sabco - Ultimate</option>
-	<option value="other">Autre</option></select>
+	<option value="other">Andere</option></select>
 			</fieldset>
 			<fieldset class="inputstyle hidden">
-				<label for="software-other-input">Précisez le logiciel de gestion</label>
+				<label for="software-other-input">Specificeer</label>
 				<input name="optin[otherSoftware]" type="text" placeholder="" class="" id="software-other-input" value="">
 			</fieldset>
 			<fieldset>
-				<input name="optin[software_has_change]" type="hidden" value="0"><input name="optin[software_has_change]" type="checkbox" class="" id="software-has-change-checkbox" value="1"><label  for="software-has-change-checkbox">Avez-vous changé de soft ces deux dernières années?</label>
+				<input name="optin[software_has_change]" type="hidden" value="0"><input name="optin[software_has_change]" type="checkbox" class="" id="software-has-change-checkbox" value="1"><label  for="software-has-change-checkbox">Hebt u in de twee verleden jaar van software house veranderd?</label>
 			</fieldset>
 			<fieldset class="inputstyle hidden select-container">
-				<select name="optin[old_idSoftware]" type="select" class="software-select" id="old-software-select" autocomplete="off"><option value="" selected="selected">Sélectionnez le logiciel de gestion</option>
+				<select name="optin[old_idSoftware]" type="select" class="software-select" id="old-software-select" autocomplete="off"><option value="" selected="selected">Welke?</option>
 	<option value="2">Corilus - Greenock</option>
 	<option value="1">Corilus - Offigest</option>
 	<option value="13">Familia</option>
@@ -157,10 +157,10 @@
 	<option value="5">Sabco - New</option>
 	<option value="4">Sabco - Optimum</option>
 	<option value="3">Sabco - Ultimate</option>
-	<option value="other">Autre</option></select>
+	<option value="other">Andere</option></select>
 			</fieldset>
 			<fieldset class="inputstyle hidden">
-				<label for="old-software-other-input">Précisez le logiciel de gestion</label>
+				<label for="old-software-other-input">Specificeer</label>
 				<input name="optin[old_otherSoftware]" type="text" placeholder="" class="" id="old-software-other-input" value="">
 			</fieldset>
 			<fieldset class="">
@@ -169,7 +169,7 @@
 						</fieldset>
 			<fieldset>
 				<button name="submit" class="btn" type="submit">
-					Soumettre
+					Bevestigen
 				</button>
 			</fieldset>
 		</section>
